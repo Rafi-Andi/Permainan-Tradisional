@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Permainan Tradisional</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="judul">
+                <h1>Rafi Andi</h1>
+            </div>
+            <ul class="list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#card">Card</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+            <i data-feather="menu" class="menu"></i>
+        </nav>
+    </header>
+
+    <main>
+        <article id="home">
+            <aside>
+                <img src="./assets/img/fotoDekorasi.png" alt="" width="320px">
+            </aside>
+            <div class="content">
+                <h2>Halo, Selamat datang <span>👋</span></h2>
+                <h1>Lestarikan Permainan Tradisional</h1>
+                <p>Kenalkan budaya permainan kita kepada generasi mendatang.</p>
+                <div class="container-button">
+                    <div class="button">
+                        <a href="#about">Tentang Kami</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="about">
+            <div class="content">
+                <h1 style="text-align: center; margin-bottom: 20px;">Tentang Kami</h1>
+                <p style="margin-bottom: 50px;">Selamat Datang di Warisan Permainan Nusantara!
+                    Website ini adalah gerbang untuk menjelajahi kekayaan permainan tradisional Indonesia, harta yang penuh makna dan cerita dari generasi ke generasi. Kami percaya bahwa permainan tradisional bukan hanya sekadar hiburan, tetapi juga sebuah cerminan budaya, kebijaksanaan lokal, dan semangat kebersamaan yang harus terus hidup.
+                </p>
+            </div>
+        </article>
+
+        <article id="card">
+            <div class="card satu">
+                <img src="./assets/img/layangan.png" alt="" width="300px">
+                <div class="content-card">
+                    <h1>Layang-layang</h1>
+                    <p>Permainan tradisional menggunakan rangka bambu dan tali. Pemain saling adu keterampilan untuk menerbangkan dan mengendalikan layangannya.</p>
+                    <h1>Manfaat:</h1>
+                    <p>Mengajarkan ketekunan, strategi, dan seni.</p>
+                </div>
+            </div>
+            <div class="card satu">
+                <img src="./assets/img/congklak.png" alt="" width="300px">
+                <div class="content-card">
+                    <h1>Congklak</h1>
+                    <p>Permainan papan yang melibatkan dua pemain dan bijian. Pemain bergiliran memindahkan  untuk mengumpulkan sebanyak mungkin di "lumbung" mereka.</p>
+                    <h1>Manfaat:</h1>
+                    <p>Melatih perencanaan strategis dan ketelitian.</p>
+                </div>
+            </div>
+            <div class="card satu">
+                <img src="./assets/img/gangsing.png" alt="" width="300px">
+                <div class="content-card">
+                    <h1>Gangsing</h1>
+                    <p>Permainan menggunakan mainan berputar dari kayu atau plastik. Pemain berlomba memutar gasingnya hingga bertahan paling lama.</p>
+                    <h1>Manfaat:</h1>
+                    <p>Mengasah keterampilan manual dan melatih ketangkasan.</p>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer id="footer">
+        <div class="content-footer">   
+            <div class="judul-web">
+                <h1>Mainan Nusantara</h1>
+                <p>&copy; M. Rafi Andi Prayitno.</p>
+                <div class="ikon">
+                    <a href="https://github.com/Rafi-Andi"><i data-feather="github" class="logo-ikon"></i></a>
+                    <a href="https://www.instagram.com/rafi.ap_95?igsh=MWJvZGVvNDZ0NDN5dQ=="><i data-feather="instagram" class="logo-ikon"></i></a>
+                </div>
+            </div>
+            <div class="navigasi">
+                <h1>Menu</h1>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#card">Card</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="sosial-media">
+                <h1>Sosial Media</h1>
+                <p><a href="https://www.instagram.com/rafi.ap_95?igsh=MWJvZGVvNDZ0NDN5dQ==">instagram : @rafi.ap_95</a></p>
+                <p><a href="https://github.com/Rafi-Andi">Github : @rafi-andi</a></p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Permainan Tradisional. Moch Rafi Andi Prayitno</p>
+        </div>
+    </footer>
+
+
+    <script>
+        feather.replace();
+    </script>
+    <script>
+        const navbarList = document.querySelector('.list')
+        const navbarMenu = document.querySelector('.menu')
+
+        navbarMenu.addEventListener('click',  () =>  {
+            navbarList.classList.toggle('aktif')
+        })
+
+        document.addEventListener('click', function(e) {
+            if(!navbarList.contains(e.target) && !navbarMenu.contains(e.target)){
+                navbarList.classList.remove('aktif')
+            }
+        })
+    </script>
+</body>
+</html>
